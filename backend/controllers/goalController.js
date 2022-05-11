@@ -8,6 +8,8 @@ const getGoals = expressAsyncHandler(async (req, res) => {
   const goals = await Goal.find();
   res.status(200).json(goals);
 });
+
+
 //@desc get Goal
 //Route  Get/api/goals
 //Access Private
